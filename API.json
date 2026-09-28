@@ -1,0 +1,2530 @@
+
+{
+    "AB::10C::7D::": {
+        "name": "R1",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl1": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.68",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::01": {
+        "name": "R1",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "status": "online",
+        "vlans": {
+            "vl1": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.1",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::02": {
+        "name": "R2",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "status": "offline",
+        "vlans": {
+            "vl2": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.2",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::03": {
+        "name": "R3",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl3": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.3",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::04": {
+        "name": "R4",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl4": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.4",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::05": {
+        "name": "R5",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl5": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.5",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::06": {
+        "name": "R6",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl6": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.6",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::07": {
+        "name": "R7",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl7": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.7",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::08": {
+        "name": "R8",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl8": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.8",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::09": {
+        "name": "R9",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl9": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.9",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::10": {
+        "name": "R10",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl10": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.10",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::11": {
+        "name": "R11",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl11": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.11",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::12": {
+        "name": "R12",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl12": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.12",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::13": {
+        "name": "R13",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl13": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.13",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::14": {
+        "name": "R14",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl14": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.14",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::15": {
+        "name": "R15",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl15": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.15",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::16": {
+        "name": "R16",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl16": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.16",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::17": {
+        "name": "R17",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl17": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.17",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::18": {
+        "name": "R18",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl18": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.18",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::19": {
+        "name": "R19",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl19": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.19",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::20": {
+        "name": "R20",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl20": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.20",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::21": {
+        "name": "R21",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl21": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.21",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::22": {
+        "name": "R22",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl22": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.22",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::23": {
+        "name": "R23",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl23": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.23",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::24": {
+        "name": "R24",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl24": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.24",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::25": {
+        "name": "R25",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl25": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.25",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::26": {
+        "name": "R26",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl26": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.26",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::27": {
+        "name": "R27",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl27": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.27",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::28": {
+        "name": "R28",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl28": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.28",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::29": {
+        "name": "R29",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl29": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.29",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::30": {
+        "name": "R30",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl30": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.30",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::31": {
+        "name": "R31",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl31": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.31",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::32": {
+        "name": "R32",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl32": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.32",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::33": {
+        "name": "R33",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl33": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.33",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::34": {
+        "name": "R34",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl34": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.34",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::35": {
+        "name": "R35",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl35": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.35",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::36": {
+        "name": "R36",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl36": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.36",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::37": {
+        "name": "R37",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl37": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.37",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::38": {
+        "name": "R38",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl38": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.38",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::39": {
+        "name": "R39",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl39": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.39",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::40": {
+        "name": "R40",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl40": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.40",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::41": {
+        "name": "R41",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl41": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.41",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::42": {
+        "name": "R42",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl42": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.42",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::43": {
+        "name": "R43",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl43": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.43",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::44": {
+        "name": "R44",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl44": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.44",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::45": {
+        "name": "R45",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl45": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.45",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::46": {
+        "name": "R46",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl46": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.46",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::47": {
+        "name": "R47",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl47": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.47",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::48": {
+        "name": "R48",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl48": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.48",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::49": {
+        "name": "R49",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl49": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.49",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::50": {
+        "name": "R50",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl50": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.50",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::51": {
+        "name": "R51",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl51": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.51",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::52": {
+        "name": "R52",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl52": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.52",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::53": {
+        "name": "R53",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl53": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.53",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::54": {
+        "name": "R54",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl54": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.54",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::55": {
+        "name": "R55",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl55": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.55",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::56": {
+        "name": "R56",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl56": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.56",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::57": {
+        "name": "R57",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl57": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.57",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::58": {
+        "name": "R58",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl58": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.58",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::59": {
+        "name": "R59",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl59": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.59",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::60": {
+        "name": "R60",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl60": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.60",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::61": {
+        "name": "R61",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl61": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.61",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::62": {
+        "name": "R62",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl62": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.62",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::63": {
+        "name": "R63",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl63": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.63",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::64": {
+        "name": "R64",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl64": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.64",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::65": {
+        "name": "R65",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl65": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.65",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::66": {
+        "name": "R66",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl66": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.66",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::67": {
+        "name": "R67",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl67": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.67",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::68": {
+        "name": "R68",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl68": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.68",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::69": {
+        "name": "R69",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl69": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.69",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::70": {
+        "name": "R70",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl70": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.70",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::71": {
+        "name": "R71",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl71": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.71",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::72": {
+        "name": "R72",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl72": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.72",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::73": {
+        "name": "R73",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl73": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.73",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::74": {
+        "name": "R74",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl74": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.74",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::75": {
+        "name": "R75",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl75": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.75",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::76": {
+        "name": "R76",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl76": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.76",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::77": {
+        "name": "R77",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl77": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.77",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::78": {
+        "name": "R78",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl78": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.78",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::79": {
+        "name": "R79",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl79": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.79",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::80": {
+        "name": "R80",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl80": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.80",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::81": {
+        "name": "R81",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl81": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.81",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::82": {
+        "name": "R82",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl82": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.82",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::83": {
+        "name": "R83",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl83": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.83",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::84": {
+        "name": "R84",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl84": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.84",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::85": {
+        "name": "R85",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl85": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.85",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::86": {
+        "name": "R86",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl86": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.86",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::87": {
+        "name": "R87",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl87": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.87",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::88": {
+        "name": "R88",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl88": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.88",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::89": {
+        "name": "R89",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl89": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.89",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::90": {
+        "name": "R90",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl90": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.90",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::91": {
+        "name": "R91",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl91": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.91",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::92": {
+        "name": "R92",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl92": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.92",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::93": {
+        "name": "R93",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl93": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.93",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::94": {
+        "name": "R94",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl94": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.94",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::95": {
+        "name": "R95",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl95": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.95",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::96": {
+        "name": "R96",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl96": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.96",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::97": {
+        "name": "R97",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl97": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.97",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::98": {
+        "name": "R98",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl98": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.98",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::99": {
+        "name": "R99",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl99": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.99",
+                "SSH": true
+            }
+        }
+    },
+    "AA::10C::7D::100": {
+        "name": "R100",
+        "protocolos": [
+            "OSPF,S.T,IGRP"
+        ],
+        "vlans": {
+            "vl100": {
+                "Ports": [
+                    "G0/0",
+                    "G0/1",
+                    "G0/2",
+                    "G0/3"
+                ],
+                "policies": [
+                    "SSH",
+                    "ACL",
+                    "VLAN",
+                    "STP"
+                ],
+                "ET": true,
+                "IP": "192.168.10.100",
+                "SSH": true
+            }
+        }
+    }
+}
