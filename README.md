@@ -101,6 +101,150 @@ These route definitions are a roadmap for future versions of the app, where the 
 
 ## Routes defined in app.py
 
+### Server dictionary structure
+
+The application defines a `servidores` dictionary in [app.py](app.py). It contains 10 mock devices with the following general structure:
+
+```python
+{
+  "0001": {
+    "ip": "192.168.0.1",
+    "device": "Router Principal",
+    "policy": ["Ro", "Not Allowed", [0.2, 0.3, 0.5]],
+    "status": True
+  }
+}
+```
+
+Each server entry includes:
+
+- `ip`: network address
+- `device`: device name or role
+- `policy`: access or rule configuration
+- `status`: boolean active/inactive state
+
+### Server route descriptions
+
+#### 1) `/servidor_1`
+
+- Method: `GET`
+- Function: `servidor_1()`
+- Description: returns the first device entry from the server dictionary.
+- Data returned:
+  - ID: `0001`
+  - IP: `192.168.0.1`
+  - Device: `Router Principal`
+  - Policy: `Ro`, `Not Allowed`, `[0.2, 0.3, 0.5]`
+  - Status: `True`
+
+#### 2) `/servidor_2`
+
+- Method: `GET`
+- Function: `servidor_2()`
+- Description: returns the second device, a switch on the first floor.
+- Data returned:
+  - ID: `0002`
+  - IP: `192.168.0.2`
+  - Device: `Switch Piso 1`
+  - Policy: `Rw`, `Allowed`
+  - Status: `True`
+
+#### 3) `/servidor_3`
+
+- Method: `GET`
+- Function: `servidor_3()`
+- Description: returns the firewall core device.
+- Data returned:
+  - ID: `0003`
+  - IP: `192.168.0.3`
+  - Device: `Firewall Core`
+  - Policy: `Block All`
+  - Status: `True`
+
+#### 4) `/servidor_4`
+
+- Method: `GET`
+- Function: `servidor_4()`
+- Description: returns a web server that is currently inactive.
+- Data returned:
+  - ID: `0004`
+  - IP: `192.168.0.4`
+  - Device: `Servidor Web`
+  - Policy: `HTTP`, `HTTPS`
+  - Status: `False`
+
+#### 5) `/servidor_5`
+
+- Method: `GET`
+- Function: `servidor_5()`
+- Description: returns an access point device.
+- Data returned:
+  - ID: `0005`
+  - IP: `192.168.0.5`
+  - Device: `Access Point`
+  - Policy: `WPA3`
+  - Status: `True`
+
+#### 6) `/servidor_6`
+
+- Method: `GET`
+- Function: `servidor_6()`
+- Description: creates and returns a new device entry for a network printer.
+- Added data:
+  - ID: `0006`
+  - IP: `192.168.0.6`
+  - Device: `Impresora de Red`
+  - Policy: `Print Only`
+  - Status: `True`
+
+#### 7) `/servidor_7`
+
+- Method: `GET`
+- Function: `servidor_7()`
+- Description: creates and returns a NAS storage server.
+- Added data:
+  - ID: `0007`
+  - IP: `192.168.0.7`
+  - Device: `Servidor NAS Almacenamiento`
+  - Policy: `Backup`, `Restricted`
+  - Status: `True`
+
+#### 8) `/servidor_8`
+
+- Method: `GET`
+- Function: `servidor_8()`
+- Description: creates and returns a security IP camera.
+- Added data:
+  - ID: `0008`
+  - IP: `192.168.0.8`
+  - Device: `Cámara IP Seguridad`
+  - Policy: `Stream Only`
+  - Status: `True`
+
+#### 9) `/servidor_9`
+
+- Method: `GET`
+- Function: `servidor_9()`
+- Description: creates and returns a UPS device used for smart backup monitoring.
+- Added data:
+  - ID: `0009`
+  - IP: `192.168.0.9`
+  - Device: `UPS Smart Respaldos`
+  - Policy: `Monitor Only`
+  - Status: `False`
+
+#### 10) `/servidor_10`
+
+- Method: `GET`
+- Function: `servidor_10()`
+- Description: creates and returns a telemetry sensor for the data center.
+- Added data:
+  - ID: `0010`
+  - IP: `192.168.0.10`
+  - Device: `Sensor Telemetría DataCenter`
+  - Policy: `IoT Device`
+  - Status: `True`
+
 ### 1) Root route
 
 - Method: `GET`
@@ -195,14 +339,41 @@ flowchart TD
     A[Client / Browser] --> B[GET /]
     A --> C[GET /json/<mac>]
     A --> D[GET /servidor_1]
+    A --> E[GET /servidor_2]
+    A --> F[GET /servidor_3]
+    A --> G[GET /servidor_4]
+    A --> H[GET /servidor_5]
+    A --> I[GET /servidor_6]
+    A --> J[GET /servidor_7]
+    A --> K[GET /servidor_8]
+    A --> L[GET /servidor_9]
+    A --> M[GET /servidor_10]
 
-    B --> E[inicio()]
-    C --> F[json_data(mac)]
-    D --> G[servidor_1()]
+    B --> N[inicio()]
+    C --> O[json_data(mac)]
+    D --> P[servidor_1()]
+    E --> Q[servidor_2()]
+    F --> R[servidor_3()]
+    G --> S[servidor_4()]
+    H --> T[servidor_5()]
+    I --> U[servidor_6()]
+    J --> V[servidor_7()]
+    K --> W[servidor_8()]
+    L --> X[servidor_9()]
+    M --> Y[servidor_10()]
 
-    E --> H[Reads API.json["AB::10C::7D::"]]
-    F --> I[Looks up API.json[mac]]
-    G --> J[Returns static JSON payload]
+    N --> Z[Loads data from API.json]
+    O --> AA[Looks up device by MAC]
+    P --> AB[Returns 0001]
+    Q --> AC[Returns 0002]
+    R --> AD[Returns 0003]
+    S --> AE[Returns 0004]
+    T --> AF[Returns 0005]
+    U --> AG[Adds 0006]
+    V --> AH[Adds 0007]
+    W --> AI[Adds 0008]
+    X --> AJ[Adds 0009]
+    Y --> AK[Adds 0010]
 ```
 
 ## Route summary table
@@ -211,7 +382,16 @@ flowchart TD
 |---|---|---|---|
 | `/` | `GET` | `inicio()` | Returns the first router record from `API.json` |
 | `/json/<mac>` | `GET` | `json_data(mac)` | Reads a router entry by key and returns the `name` |
-| `/servidor_1` | `GET` | `servidor_1()` | Returns a synthetic server JSON payload |
+| `/servidor_1` | `GET` | `servidor_1()` | Returns the main router device `0001` |
+| `/servidor_2` | `GET` | `servidor_2()` | Returns the first-floor switch `0002` |
+| `/servidor_3` | `GET` | `servidor_3()` | Returns the firewall core `0003` |
+| `/servidor_4` | `GET` | `servidor_4()` | Returns the web server `0004` |
+| `/servidor_5` | `GET` | `servidor_5()` | Returns the access point `0005` |
+| `/servidor_6` | `GET` | `servidor_6()` | Adds and returns the network printer `0006` |
+| `/servidor_7` | `GET` | `servidor_7()` | Adds and returns the NAS server `0007` |
+| `/servidor_8` | `GET` | `servidor_8()` | Adds and returns the security IP camera `0008` |
+| `/servidor_9` | `GET` | `servidor_9()` | Adds and returns the UPS backup device `0009` |
+| `/servidor_10` | `GET` | `servidor_10()` | Adds and returns the telemetry sensor `0010` |
 
 ## Notes for future development
 
