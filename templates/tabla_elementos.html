@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Elementos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="app-body">
+    <div class="page-shell">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">Inventario</p>
+                <h1>Tabla de elementos</h1>
+            </div>
+            <div class="toolbar">
+                <form method="get" action="{{ url_for('tabla_elementos') }}" class="search-form">
+                    <input class="search-input" type="text" name="q" value="{{ filtro | default('') }}" placeholder="Buscar por MAC, nombre o IP">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+                <a class="btn btn-secondary" href="{{ url_for('formulario_elemento') }}">+ Nuevo</a>
+            </div>
+        </header>
+
+        <div class="table-shell">
+            <div class="table-scroll">
+                <table class="table-sticky">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Estado</th>
+                            <th>Protocolos</th>
+                            <th>VLAN</th>
+                            <th>IP</th>
+                            <th>Puertos</th>
+                            <th>Políticas</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if rows %}
+                            {% for row in rows %}
+                            <tr>
+                                <td>{{ row.mac | default('N/A') }}</td>
+                                <td>{{ row.name | default('N/A') }}</td>
+                                <td>
+                                    {% set status_value = (row.status | default('unknown')) | string %}
+                                    <span class="status status-{{ status_value | lower | replace(' ', '-') }}">{{ status_value }}</span>
+                                </td>
+                                <td>
+                                    <div class="chip-list">
+                                        {% if row.protocolos is iterable and row.protocolos is not string %}
+                                            {% for protocol in row.protocolos %}
+                                                <span class="chip">{{ protocol }}</span>
+                                            {% endfor %}
+                                        {% elif row.protocolos %}
+                                            {% for protocol in (row.protocolos|string).split(',') %}
+                                                {% if protocol.strip() %}
+                                                <span class="chip">{{ protocol.strip() }}</span>
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% else %}
+                                            <span class="muted">N/A</span>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    {% if row.vlan %}
+                                        <span class="text-inline">{{ row.vlan }}</span>
+                                    {% else %}
+                                        <span class="muted">N/A</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if row.ip %}
+                                        <span class="text-inline detail-value--mono">{{ row.ip }}</span>
+                                    {% else %}
+                                        <span class="muted">N/A</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <div class="chip-list">
+                                        {% if row.ports is iterable and row.ports is not string %}
+                                            {% for port in row.ports %}
+                                                <span class="chip chip-secondary">{{ port }}</span>
+                                            {% endfor %}
+                                        {% elif row.ports %}
+                                            {% for port in (row.ports|string).split(',') %}
+                                                {% if port.strip() %}
+                                                <span class="chip chip-secondary">{{ port.strip() }}</span>
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% else %}
+                                            <span class="muted">N/A</span>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="chip-list">
+                                        {% if row.policies is iterable and row.policies is not string %}
+                                            {% for policy in row.policies %}
+                                                <span class="chip chip-slate">{{ policy }}</span>
+                                            {% endfor %}
+                                        {% elif row.policies %}
+                                            {% for policy in (row.policies|string).split(',') %}
+                                                {% if policy.strip() %}
+                                                <span class="chip chip-slate">{{ policy.strip() }}</span>
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% else %}
+                                            <span class="muted">N/A</span>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="icon-btn" href="{{ url_for('ver_elemento', id=row.mac) }}" title="Buscar" aria-label="Ver elemento">🔎</a>
+                                        <a class="icon-btn" href="{{ url_for('formulario_elemento') }}" title="Agregar" aria-label="Agregar elemento">➕</a>
+                                        <a class="icon-btn" href="{{ url_for('formulario_elemento_editar', id=row.mac) }}" title="Modificar" aria-label="Editar elemento">✏️</a>
+                                        <form class="inline-form" action="{{ url_for('eliminar_elemento', id=row.mac) }}" method="post">
+                                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                            <button class="icon-btn" type="submit" title="Eliminar" aria-label="Eliminar elemento" data-delete-confirm>🗑️</button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr class="table-empty">
+                                <td colspan="9">
+                                    <div class="empty-state">
+                                        {% if filtro %}
+                                            <strong>No se encontraron elementos para "{{ filtro }}"</strong>
+                                            <span>Intenta con otra búsqueda o crea un nuevo elemento.</span>
+                                        {% else %}
+                                            <strong>No hay elementos registrados todavía</strong>
+                                            <span>Comienza agregando el primer dispositivo de la infraestructura.</span>
+                                        {% endif %}
+                                        <a class="btn btn-primary" href="{{ url_for('formulario_elemento') }}">+ Nuevo</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/ui.js') }}"></script>
+</body>
+</html>
